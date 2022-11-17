@@ -1,12 +1,14 @@
 
-function SelectClassic() {
+function selectClassic() {
     Cookies.set(`Classic`,`selected`);
 }
-function ConvertableImg() {
+function selectConvertable() {
     Cookies.set(`Convertable`,`selected`);
 }
-function NewSchoolImg() {
+function selectNewSchool() {
     Cookies.set(`NewSchool`, `selected`);
 }
 
-document.getElementById(`ClassicImg`).addeventlistener(`click`, SelectClassic);
+document.getElementById(`ClassicImg`).addEventListener(`click`, selectClassic)
+document.getElementById(`ConvertableImg`).addEventListener(`click`, selectConvertable)
+document.getElementById(`NewSchoolImg`).addEventListener(`click`, selectNewSchool)
